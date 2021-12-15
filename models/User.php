@@ -89,13 +89,14 @@ class User extends Model
         'roles_pivot' => [
             Role::class,
             'table' => 'october_test_users_roles',
-            'pivot' => ['clearance_level', 'is_executive'],
-            'timestamps' => true
+            'pivot' => ['clearance_level', 'is_executive', 'evolution'],
+            'timestamps' => true,
+            'pivotModel' => UserRolePivot::class,
         ],
         'roles_pivot_model' => [
             Role::class,
             'table' => 'october_test_users_roles',
-            'pivot' => ['clearance_level', 'is_executive', 'country_id'],
+            'pivot' => ['clearance_level', 'is_executive', 'country_id', 'evolution'],
             'timestamps' => true,
             'pivotModel' => UserRolePivot::class,
         ],

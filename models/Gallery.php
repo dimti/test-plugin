@@ -70,7 +70,7 @@ class Gallery extends Model
      */
     public function beforeValidate()
     {
-        $this->rules['subtitle'] = ['required', 'betwixt:3,255', new \October\Test\Classes\LowercaseRule];
+        $this->rules['subtitle'] = ['required', 'betwixt:3,255', 'lowercase'];
     }
 
     /**

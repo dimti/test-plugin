@@ -123,5 +123,6 @@ class Plugin extends PluginBase
     {
         Validator::extend('uppercase', \October\Test\Classes\UppercaseRule::class);
         Validator::extend('betwixt', \October\Test\Classes\BetwixtRule::class);
+        Validator::extend('lowercase', \October\Test\Classes\LowercaseRule::class);
     }
 }

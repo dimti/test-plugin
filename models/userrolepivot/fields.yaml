@@ -12,8 +12,14 @@ fields:
         type: checkbox
         span: auto
 
+    pivot[evolution]:
+        label: Evolution
+        type: dropdown
+        emptyOption: '--- Choose ---'
+        span: left
+
     pivot[country]:
-        span: auto
+        span: left
         label: Country
         type: recordfinder
         recordsPerPage: 20
